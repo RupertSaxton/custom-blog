@@ -1,0 +1,16 @@
+<div class="navbar">
+  <div class="navbar-item">
+    <%= link_to 'Home', root_path %>
+  </div>
+  <div class="navbar-item">
+    <%= link_to 'Archive', posts_path %>
+  </div>
+  <div class="navbar-item">
+    <%= link_to 'About', root_path %>
+  </div>
+  <% if session[:user_id] %>
+    <div class="navbar-item">
+      <%= link_to 'New Post', new_post_path %>
+    </div>
+  <% end %>
+</div>

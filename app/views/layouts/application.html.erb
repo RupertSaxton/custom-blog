@@ -5,6 +5,8 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet">
+
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
@@ -14,6 +16,10 @@
       Logged in as <%= current_user.email %>.
       <%= link_to "Log Out", logout_path %>
     <% end %>
-    <%= yield %>
+    <div id="content-wrapper">
+      <p id="title">Rupert Saxton</p>
+      <%= render partial: 'layouts/navbar' %>
+      <%= yield %>
+    </div>
   </body>
 </html>
