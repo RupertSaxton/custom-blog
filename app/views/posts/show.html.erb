@@ -1,2 +1,1 @@
-<h1><%= @post.title %></h1>
-<p><%= @post.content %></p>
+<%= render partial: 'post', locals: { post: @post } %>
