@@ -1,1 +1,2 @@
 <%= render partial: 'form' %>
+<%= button_to 'Delete', { action: 'destroy', id: @post.id }, method: :delete, data: { confirm: 'Are you sure?' } %>

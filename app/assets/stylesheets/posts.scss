@@ -1,3 +1,10 @@
+.field {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 1em;
+}
+
 .post {
   padding: 0 10px 20px;
 }
