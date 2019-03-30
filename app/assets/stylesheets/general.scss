@@ -68,7 +68,7 @@ textarea {
   line-height: 1.6em;
 }
 
-textarea, input[type="text"] {
+textarea, input[type="text"], input[type="password"] {
   flex: 10;
   border: 1px solid #51845b;
   border-radius: 3px;
