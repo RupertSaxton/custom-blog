@@ -42,6 +42,37 @@ body {
   margin-bottom: 0;
 }
 
-p {
+p, textarea, input {
   color: #646664
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+input {
+  min-height: 2em;
+  line-height: 2em;
+}
+
+label {
+  flex: 2;
+  color: #2C6A38;
+  text-align: center;
+}
+
+textarea {
+  min-height: 30em;
+  line-height: 1.6em;
+}
+
+textarea, input[type="text"] {
+  flex: 10;
+  border: 1px solid #51845b;
+  border-radius: 3px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  padding: 5px 10px;
 }
