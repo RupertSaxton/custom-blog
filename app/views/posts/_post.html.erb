@@ -1,4 +1,4 @@
 <div class="post">
-  <p class="post-title"><%= post.title %></p>
+  <%= link_to post.title, post_path(post), class: 'post-title' %>
   <p class="post-content"><%= post.content %></p>
 </div>
